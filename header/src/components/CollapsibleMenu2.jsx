@@ -16,6 +16,7 @@ function CollapsibleMenu2() {
             <li><Link to="/">HOME PAGE</Link></li>
             <li><Link to="/about">ABOUT</Link></li>
             <li><Link to="/search">SEARCH</Link></li>
+            <li><Link to="/cities">CITIES</Link></li>
             <li><Link to="/login">USER LOGIN</Link></li>
           </ul>
         </nav>
