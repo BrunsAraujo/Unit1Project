@@ -1,41 +1,52 @@
-import { useState } from "react";
-
-import carImage from "./../assets/car.png"; // Replace with your actual image path
+import carImage from "./../assets/car.png";
 
 function Header() {
   return (
-
-    <header 
-    style={{
+    <header
+      style={{
         textAlign: "center",
         padding: "20px",
         backgroundColor: "#f0f8ff",
-        borderBottom: "2px solid #ccc",
-        position: "relative",
+        borderBottom: "2px solid #ccc"
       }}
     >
-      <h1 style={{ fontSize: "20rem", marginBottom: "10px" }}>
-        Turn - <span style={{ display: "inline-block", animation: "shake 0.5s infinite", color: "#ff6600" }}>HERE!</span>
-      </h1>
+      {/* Flex container for title and car */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "20px",
+          flexWrap: "wrap"
+        }}
+      >
+        <h1
+          style={{
+            fontSize: "6rem", // Smaller to fit with car
+            margin: 0
+          }}
+        >
+          Turn - <span className="shake-hover" style={{ color: "#ff6600" }}>HERE!</span>
+        </h1>
 
-      <div style={{ marginBottom: "20px" }}>
-        <h2 style={{ fontSize: "3.0rem", marginBottom: "10px" }}>
-          Your day trip planned for you.
-        </h2>
         <img
           src={carImage}
-          alt="Cartoon car"
+          alt="Blue cartoon car icon representing Turn-HERE travel app"
+          className="bounce-hover"
           style={{
-            width: "250px",
-            position: "absolute",
-            top: "150px",
-            left: "2000px",
+            width: "150px",
+            height: "auto"
           }}
         />
+      </div>
+
+      <div style={{ marginTop: "20px" }}>
+        <h2 style={{ fontSize: "2rem", marginBottom: "10px" }}>
+          Your day trip planned for you.
+        </h2>
       </div>
     </header>
   );
 }
-
 
 export default Header;
