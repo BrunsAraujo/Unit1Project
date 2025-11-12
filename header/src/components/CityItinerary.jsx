@@ -1,3 +1,4 @@
+//Props-based-Relies on "city" and "onBack" passed from parent, allows for cityitinerary display/filter
 import { useEffect, useState, useRef } from "react";
 import { cityData } from "./cityData";
 
