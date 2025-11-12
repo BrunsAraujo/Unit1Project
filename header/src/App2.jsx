@@ -1,3 +1,4 @@
+//adds routing with react-router-dom and login (hardcoded)
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import CollapsibleMenu2 from "./components/CollapsibleMenu2";
