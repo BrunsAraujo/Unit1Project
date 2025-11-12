@@ -1,4 +1,4 @@
-//adds the Search and Footer
+//adds the Search, Footer and routes both. CityItinerary3 supports both props and URL. It betters the user experience.
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
