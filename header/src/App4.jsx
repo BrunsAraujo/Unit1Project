@@ -1,10 +1,11 @@
+//Adds rounting to /login and /cities, city selection via props, better login for user
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import CollapsibleMenu2 from "./components/CollapsibleMenu2";
-import LoginForm from "./components/LoginForm";
 import CityList from "./components/CityList";
 import CityItinerary from "./components/CityItinerary";
+import LoginForm from "./components/LoginForm";
 import "./App.css";
 
 function App() {
