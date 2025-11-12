@@ -1,4 +1,5 @@
-//adds search itinerary3, search3, tripSaver.
+//adds search citinerary3, search3, tripSaver for loggedin users(conditional rendering).
+// Login state tracked va loggedInUser. Search 3 inclines inline itinerary view
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
